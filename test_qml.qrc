@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>Test/main.qml</file>
+        <file>Test/image/bg.jpg</file>
+        <file>Test/OptionButton.qml</file>
     </qresource>
 </RCC>
