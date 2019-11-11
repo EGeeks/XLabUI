@@ -3,5 +3,6 @@
         <file>Test/main.qml</file>
         <file>Test/image/bg.jpg</file>
         <file>Test/OptionButton.qml</file>
+        <file>Test/compass/TestCompass.qml</file>
     </qresource>
 </RCC>

@@ -9,6 +9,12 @@ ApplicationWindow {
     height: 800
     title: qsTr("Scroll")
 
+    function changeStackView(filename){
+        if(!child_stackview.busy){
+            child_stackview.replace(filename)
+        }
+    }
+
     Image {
         anchors.fill: parent
         source: "image/bg.jpg"
@@ -62,7 +68,7 @@ ApplicationWindow {
 
                   onCheckedChanged: {
                       if(checked){
-                          //changeStackView("ColorSetting.qml", PageNoTypeQML.Setting_PageNo_Color);
+                          changeStackView("compass/TestCompass.qml");
                       }
                   }
               }
@@ -73,7 +79,7 @@ ApplicationWindow {
 
                   onCheckedChanged: {
                       if(checked){
-                          //changeStackView("ColorSetting.qml", PageNoTypeQML.Setting_PageNo_Color);
+                         changeStackView("compass/TestCompass.qml");
                       }
                   }
               }
@@ -86,7 +92,7 @@ ApplicationWindow {
           anchors.right: parent.right
           anchors.top: parent.top
           anchors.bottom: parent.bottom
-          //initialItem: "OsdSetting.qml"
+          initialItem: "compass/TestCompass.qml"
           clip: true
       }
 

@@ -1,3 +1,5 @@
 <RCC>
-    <qresource prefix="/"/>
+    <qresource prefix="/">
+        <file>Component/compass/ECompass.qml</file>
+    </qresource>
 </RCC>
