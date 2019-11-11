@@ -5,8 +5,8 @@ import QtQuick.VirtualKeyboard 2.4
 ApplicationWindow {
     id: window
     visible: true
-    width: 640
-    height: 480
+    width: 1280
+    height: 800
     title: qsTr("Scroll")
 
     ScrollView {
